@@ -2,9 +2,12 @@ import os
 import venv
 import subprocess
 
+
+
 def new_projet(projet_name):
-    CUR_DIR = os.path.dirname(__file__)
-    PROJET_PATH = os.path.join(CUR_DIR, projet_name)
+    global_folder_path = "/home/kilann/Documents/python_dev"
+    #CUR_DIR = os.path.dirname(global_folder_path)
+    PROJET_PATH = os.path.join(global_folder_path, projet_name)
     APP_PATH = os.path.join(PROJET_PATH, "app")
     APP_FILE = os.path.join(APP_PATH,"app.py")
     ENV_PATH = os.path.join(PROJET_PATH,"env")
