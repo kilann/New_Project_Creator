@@ -22,6 +22,11 @@ def new_projet(projet_name):
 
     if not os.path.exists(ENV_PATH):
         venv.create(ENV_PATH,with_pip=True)
+
+        
+        os.chdir(PROJET_PATH)
+        cmd = 'code .'
+        os.system(cmd)
        
 if __name__ == '__main__':
     projet_name = input("nom du projet")
