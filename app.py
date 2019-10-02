@@ -6,7 +6,7 @@ import time
 import shutil
 
 
-def new_projet(projet_name,venv=True,git=True):
+def new_projet(projet_name,envv=True,git=True):
     global_folder_path = "/home/kilann/Documents/python_dev"
     #CUR_DIR = os.path.dirname(global_folder_path)
     PROJET_PATH = os.path.join(global_folder_path, projet_name)
@@ -25,9 +25,10 @@ def new_projet(projet_name,venv=True,git=True):
         with open(APP_FILE, "a"):
             os.utime(APP_FILE, None)
 
-    if venv == True:
+    if envv == True:
         if not os.path.exists(ENV_PATH): 
             venv.create(ENV_PATH,with_pip=True)
+            time.sleep(2)
             
     os.chdir(PROJET_PATH)
     cmd = 'code .'
@@ -52,4 +53,4 @@ def new_projet(projet_name,venv=True,git=True):
        
 if __name__ == '__main__':
     projet_name = input("nom du projet: ")
-    new_projet(projet_name,venv=False)
+    new_projet(projet_name,envv=True,git=True)
