@@ -8,15 +8,19 @@ import shutil
 
 def new_projet(projet_name,envv=True,git=True):
     global_folder_path = "/home/kilann/Documents/python_dev"
+
     #CUR_DIR = os.path.dirname(global_folder_path)
     PROJET_PATH = os.path.join(global_folder_path, projet_name)
     APP_PATH = os.path.join(PROJET_PATH, "app")
     APP_FILE = os.path.join(APP_PATH,"app.py")
+    README_FILE = os.path.join(PROJET_PATH,"app.py")
     ENV_PATH = os.path.join(PROJET_PATH,"env")
     BIN_PATH = os.path.join(ENV_PATH, "bin")
 
     if not os.path.exists(PROJET_PATH):
-        os.mkdir(PROJET_PATH) 
+        os.mkdir(PROJET_PATH)
+        with open(README_FILE, "a"):
+            os.utime(APP_FILE, None)
 
     if not os.path.exists(APP_PATH):
         os.mkdir(APP_PATH)  
