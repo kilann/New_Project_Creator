@@ -5,7 +5,6 @@
 <li>    create virtual environement</li>
 <li>    create first git link and commit</li>
 <li>    create new github repo and remote it</li>
-<li>    just modify the config.json with the path of your working directory, loggin  and password github
 </ul></p>
 
 <p><ul>
