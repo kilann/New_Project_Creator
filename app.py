@@ -9,7 +9,7 @@ from selenium import webdriver
 
 
 def new_projet(projet_name,virenv=True,git=True,github=True):
-    with open("config2.json", "r") as variable:
+    with open("config.json", "r") as variable:
         data = json.load(variable)
 
     working_directory = data['path']
