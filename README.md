@@ -11,9 +11,9 @@
 <li>* [ ] activate virtual environement</li>
 <li>* [X] ~~*auto launch vsc from folder*~~ [2019-09-28]</li>
 <li>* [X] ~~*auto create readme.md file</li>*~~ [2019-09-30]
-<li>* [ ] create first git link and commit</li>
+<li>* [X] ~~*create first git link and commit</li>*~~ [2019-10-03]
 <li>* [ ] create new github repo and clone it</li>
-<li>* [ ] create json file for easy setup (start folder, loggin and password)</li>
+<li>* [X] ~~*create json file for easy setup (start folder, loggin and password)</li>*~~ [2019-10-03]
 <li>* [ ] add it as terminal function</li>
 <li>* [ ] add requirements.txt</li>
 <li>* [ ] add docstring</li>

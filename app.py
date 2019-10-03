@@ -4,18 +4,23 @@ import subprocess
 import git
 import time
 import shutil
+import json
 
 
 def new_projet(projet_name,virenv=True,git=True):
-    global_folder_path = "/home/kilann/Documents/python_dev"
+    with open("config.json", "r") as variable:
+        data = json.load(variable)
 
-    #CUR_DIR = os.path.dirname(global_folder_path)
-    PROJET_PATH = os.path.join(global_folder_path, projet_name)
+    working_directory = data['path']
+    #loggin = data['githublogin']
+    #password = data['githubpass']
+
+    PROJET_PATH = os.path.join(working_directory, projet_name)
     APP_PATH = os.path.join(PROJET_PATH, "app")
     APP_FILE = os.path.join(APP_PATH,"app.py")
     README_FILE = os.path.join(PROJET_PATH,"app.py")
     ENV_PATH = os.path.join(PROJET_PATH,"env")
-    BIN_PATH = os.path.join(ENV_PATH, "bin")
+    #BIN_PATH = os.path.join(ENV_PATH, "bin")
 
     if not os.path.exists(PROJET_PATH):
         os.mkdir(PROJET_PATH)
@@ -53,8 +58,7 @@ def new_projet(projet_name,virenv=True,git=True):
         subprocess.Popen("git add app.py", stdout=subprocess.PIPE, shell=True)
         time.sleep(1)
         subprocess.Popen("git commit -m 'first commit'", stdout=subprocess.PIPE, shell=True)
-
-       
+    
 if __name__ == '__main__':
     projet_name = input("nom du projet: ")
     new_projet(projet_name,virenv=True,git=True)
