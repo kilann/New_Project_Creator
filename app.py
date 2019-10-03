@@ -19,7 +19,7 @@ def new_projet(projet_name,virenv=True,git=True,github=True):
     PROJET_PATH = os.path.join(working_directory, projet_name)
     APP_PATH = os.path.join(PROJET_PATH, "app")
     APP_FILE = os.path.join(APP_PATH,"app.py")
-    README_FILE = os.path.join(PROJET_PATH,"app.py")
+    README_FILE = os.path.join(PROJET_PATH,"README.md")
     ENV_PATH = os.path.join(PROJET_PATH,"env")
     #BIN_PATH = os.path.join(ENV_PATH, "bin")
 
@@ -32,6 +32,10 @@ def new_projet(projet_name,virenv=True,git=True,github=True):
     if not os.path.exists(APP_FILE):
         with open(APP_FILE, "a"):
             os.utime(APP_FILE, None)
+
+    if not os.path.exists(README_FILE):
+        with open(README_FILE, "a"):
+            os.utime(README_FILE, None)    
 
     if virenv == True:
         if not os.path.exists(ENV_PATH): 
