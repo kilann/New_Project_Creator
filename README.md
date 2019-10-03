@@ -15,6 +15,6 @@
 <li>* [X] ~~*create new github repo and clone it</li>*~~ [2019-10-03]
 <li>* [X] ~~*create json file for easy setup (start folder, loggin and password)</li>*~~ [2019-10-03]
 <li>* [ ] add it as terminal function</li>
-<li>* [ ] add requirements.txt</li>
+<li>* [X] ~~*add requirements.txt</li>*~~ [2019-10-03]
 <li>* [ ] add docstring</li>
 </ul></p>
