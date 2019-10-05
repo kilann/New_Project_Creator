@@ -25,5 +25,6 @@
 <li>* [X] ~~*create json file for easy setup (start folder, loggin and password)</li>*~~ [2019-10-03]
 <li>* [ ] add it as terminal function</li>
 <li>* [X] ~~*add requirements.txt</li>*~~ [2019-10-03]
-<li>* [ ] add docstring</li>
+<li>* [X] ~~*add docstring</li>*~~ [2019-10-05
 </ul></p>
+[2019-10-03]
