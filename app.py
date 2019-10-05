@@ -9,6 +9,22 @@ from selenium import webdriver
 
 
 def new_projet(projet_name,virenv=True,git=True,github=True):
+    """ style Google
+
+            Args:
+                projet_name: Name of New project
+                virenv: virtual environement creation ( True or False)
+                git: git link creation ( True or False)
+                github: github repo creation ( True or False)
+
+            Returns:
+                create folder with the new project name
+                create sub folder for the application project
+                create virtual environement
+                create first git link and commit
+                create new github repo and remote it
+            """
+            
     with open("config.json", "r") as variable:
         data = json.load(variable)
 

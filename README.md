@@ -5,7 +5,6 @@
 <li>    create virtual environement</li>
 <li>    create first git link and commit</li>
 <li>    create new github repo and remote it</li>
-<li>    just modify the config.json with the path of your working directory, loggin  and password github
 </ul></p>
 
 <p><ul>
@@ -26,5 +25,5 @@
 <li>* [X] ~~*create json file for easy setup (start folder, loggin and password)</li>*~~ [2019-10-03]
 <li>* [ ] add it as terminal function</li>
 <li>* [X] ~~*add requirements.txt</li>*~~ [2019-10-03]
-<li>* [ ] add docstring</li>
+<li>* [X] ~~*add docstring</li>*~~ [2019-10-05]
 </ul></p>
